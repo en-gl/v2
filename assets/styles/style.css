@@ -33,7 +33,15 @@ a.active {
 
 main {
     min-height: 82vh;
-    background: linear-gradient(-180deg,rgb(0, 66, 66),rgb(34, 48, 48),#830741, #272626);
+    /* background: linear-gradient(-180deg,rgb(0, 66, 66),rgb(34, 48, 48),#830741, #272626); */
+    background-color: #DFDBE5;
+    background-image: url(https://img.freepik.com/free-vector/realistic-studio-lights-empty-background-design_1017-27233.jpg?w=2000);
+    background-size: cover;
+    background-position: 0 ;
+}
+
+.carousel {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.651);
 }
 
 .carousel-item {
@@ -51,6 +59,8 @@ h1 {
 .formSection {
     margin: 1rem 0;
     padding: 1rem 0;
+    flex-direction: column;
+    align-items: center;
 }
 
 .check {
@@ -61,25 +71,24 @@ h1 {
 }
 
 .check label {
-    background-color: #d90368 !important;
+    background-color: #850052d7 !important;
     padding: .3rem;
     color: white;
     border-radius: .5rem;
     border: 1px solid black;
 }
 
-
-.card-body a {
-    background-color: #d90368;
-    color: white;
-    border: 1px solid black;
+.input-group{
+    width: 80% !important;
 }
+
 
 .card {
     padding: 0;
     height: 21rem;
     border: 2px solid black;
-    box-shadow: 0px 20px 20px -10px rgb(59, 80, 105);
+    box-shadow: 0px 20px 20px -10px #006e6e;
+    background-color: #212529;
 }
 
 .card-img {
@@ -94,8 +103,23 @@ h1 {
 
 .card-body {
     height: 60%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 2px solid #009e9e;
 }
 
+.card-body a {
+    background-color: #d90368;
+    color: white;
+    border: 1px solid black;
+    align-self: center;
+}
+
+.card-body h6 {
+    color: #00e6e6;
+}
 
 
 
