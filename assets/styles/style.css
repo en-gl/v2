@@ -33,11 +33,70 @@ a.active {
 
 main {
     min-height: 82vh;
+    background: linear-gradient(-180deg,rgb(0, 66, 66),rgb(34, 48, 48),#830741, #272626);
 }
 
 .carousel-item {
     height: 20vh;
 }
+
+.carousel-item img {
+    opacity: .7;
+}
+
+h1 {
+    text-shadow: 3px 3px black;
+}
+
+.formSection {
+    margin: 1rem 0;
+    padding: 1rem 0;
+}
+
+.check {
+    margin: .5rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem !important;
+}
+
+.check label {
+    background-color: #d90368 !important;
+    padding: .3rem;
+    color: white;
+    border-radius: .5rem;
+    border: 1px solid black;
+}
+
+
+.card-body a {
+    background-color: #d90368;
+    color: white;
+    border: 1px solid black;
+}
+
+.card {
+    padding: 0;
+    height: 21rem;
+    border: 2px solid black;
+    box-shadow: 0px 20px 20px -10px rgb(59, 80, 105);
+}
+
+.card-img {
+    width: 100% !important;
+    height: 40%;
+}
+
+.card-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.card-body {
+    height: 60%;
+}
+
+
 
 
 footer {
