@@ -1,55 +1,361 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: 0;
 }
 
-nav {
+header {
     min-height: 10vh;
-    border-bottom: 2px solid #d90368;
-}
-
-.navbar-collapse {
-    justify-content: end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #d90368;
 }
 
 .nav-link {
-    color: #ffffff !important;
     background-color: #d90368;
-    border: 2px solid black;
-    border-radius: .5rem;
-    text-align: center;
-    margin-bottom: .2rem;
-} 
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: .6rem;
+    padding: .5rem 1rem !important;
+    margin-right: 1rem;
+}
 
 a.active {
-    background-color: rgba(5, 3, 3, 0.144) !important;
-    border: 1px solid #d90368;
+    background-color: rgba(0, 0, 0, 0.192);
+    border: 2px solid #d90368 !important;
 }
 
-.nav-link:hover {
-    background-color: #ff1582e8;
-}
-
-main {
-    min-height: 82vh;
+a.nav-link:hover {
+    background-color: #ff1b85;;
 }
 
 .carousel-item {
-    height: 20vh;
+    height: 220px !important;
+    
+}
+
+.imgCarousel {
+    width: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    opacity: .6 ;
+}
+
+main {
+    min-height: 83vh;
+    background: linear-gradient(-180deg,rgb(0, 66, 66),rgb(34, 48, 48),#830741, #272626);
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 4rem;
+}
+
+.row {
+    gap: 5rem;
+}
+
+.card {
+    border-radius: 1rem !important;
+    border: 3px solid black !important;
+    height: 20rem !important;
+    box-shadow: 0px 20px 20px -10px rgb(59, 80, 105);
+}
+
+.cardDetails {
+    height: 40rem !important;
+    flex-direction: row !important;
 }
 
 
-footer {
-    min-height: 8vh;
-    color: #d90368;
+.imgCardContainer {
+    height: 50%;
+    margin-top: 1rem;
+    width: 90%;
+    margin-left: .7rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+/* Details page */
+.imgCardContainerDetails {
+    height: 90%;
+    margin-top: 1rem;
+    width: 50%;
+    margin-left: .7rem;
+    border-radius: 1rem 0 0 1rem;
+}
+
+/* Details page */
+
+.imgCardContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+
+/* Details page */
+.imgCardContainerDetails img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem 0 0 1rem;
+}
+
+/* Details page */
+
+.card-body {
+    height: 40% !important;
+}
+
+.card-bodyDetails {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 2px solid black;
+}
+
+
+.card:hover {
+    transform: scale(1.02) !important;
+    transition: color 1s !important;
+}
+
+.cardLink {
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    background-color: #d90368;
+    border: 2px solid black;
+    border-radius: .6rem;
+    padding: .4rem .8rem;
+}
+
+.cardLink:hover {
+    background-color: #ff0077;
+}
+
+.card-body a:hover {
+    color: black;
+}
+
+.submit {
+    width: 20%;
+    background-color: #d90368;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: .6rem;
+    padding: .5rem 1rem !important;
+    color: white;
+}
+
+.formContainer {
+    width: 80% !important;
+}
+
+form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+form label {
+    color: white;
+    align-self: flex-start;
+}
+
+form input,
+textarea {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    box-shadow: 0px 5px 10px -5px #020202;
+    transition: 0.3s;
+}
+
+.form {
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: .5rem;
-    border-top: 2px solid #d90368;
+    gap: 1rem;
+    padding: 1rem;
 }
 
-.rrss svg {
-    color: #d90368 !important;
+
+.input:focus {
+    outline-color: #e8e8e8;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+        inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+}
+
+.table {
+    width: 75% !important;
+}
+
+td {
+    height: 2.5rem !important;
+}
+
+footer {
+    min-height: 7vh;
+    background-color: rgb(0, 0, 0) !important;
+    border-top: 5px solid #d90368;
+    color: #d90368;
+}
+
+footer .rrss {
+    margin-left: 3rem;
+}
+
+footer h2 {
+    margin-right: 3rem;
+}
+
+footer svg {
+    color: #d90368;
+}
+
+@media screen and (max-width: 1090px) {
+    .inputContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .formContainer {
+        width: 80% !important;
+    }
+
+    form {
+        width: 100%;
+        
+    }
+    
+    form .submit {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center !important;
+        padding: .5rem;
+    }
+
+    header .navBar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-link {
+        background-color: #d90368;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: .6rem;
+        padding: .4rem .7rem !important;
+        margin: .5rem 0;
+        font-size: .7rem !important;
+        text-align: center;
+    }
+
+    .row {
+        gap: 0 !important;
+    }
+
+    .cardDetails {
+        flex-direction: column !important;
+    }
+
+    .imgCardContainerDetails {
+        width: 95%;
+        height: 50%;
+    }
+
+    .imgCardContainerDetails img {
+        width: 100%;
+        height: 100%;
+        padding-top: .5rem;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .card-bodyDetails {
+        width: 100%;
+        height: 50%;
+        border-left: 0;
+        border-top: 2px solid black;
+    }
+
+    .card-bodyDetails div {
+        flex-direction: column;
+    }
+
+    .table {
+        width: 95% !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .logo img {
+        width: 8rem;
+        height: 2rem;
+    }
+
+    .nav-link {
+        background-color: #d90368;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: .6rem;
+        padding: .2rem .5rem !important;
+        font-size: .8rem !important;
+    }
+
+    .formContainer {
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    .inputContainer {
+        width: 100%;
+        margin: 0 auto!important;
+    }
+
+    .textContain {
+        width: 100%;
+    }
+
+    .input-group {
+        width: 100% !important;
+        margin-bottom: .5rem;
+    }
+
+    .input-group>.form-control{
+        width: 30% !important;
+    }
+
+    .row {
+        gap: 1rem !important;
+    }
+
+
+
+    footer {
+        height: 12vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer .rrss {
+        margin-top: .5rem;
+    }
+
+    footer h2 {
+        margin-left: 3rem;
+    }
 }
