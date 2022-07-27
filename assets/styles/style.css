@@ -90,10 +90,11 @@ main {
 
 .card {
     padding: 0;
-    height: 21rem;
+    height: 27rem;
     border: 2px solid black;
     box-shadow: 0px 20px 20px -10px #006e6e;
     background-color: #212529;
+    width: 16rem;
 }
 
 .card-img {
@@ -168,18 +169,16 @@ textarea {
     width: 100%;
     border: none;
     padding: 1rem;
+    border-bottom: 2px solid #d90368 !important;
     border-radius: 1rem;
     background: #e8e8e8;
     box-shadow: 0px 5px 10px -5px #009e9e;
-    transition: 0.3s;
+
 }
 
-.input:focus {
-    outline-color: #e8e8e8;
-    background: #e8e8e8;
-    box-shadow: inset 20px 20px 60px #c5c5c5,
-        inset -20px -20px 60px #ffffff;
-    transition: 0.3s;
+form input:focus, form textarea:focus {
+    outline-color: #eb0000 !important;
+    box-shadow: inset 0px 0px 5px #000501a4 !important;
 }
 
 .submit {
@@ -379,7 +378,11 @@ textarea {
     }
 
     .cardContainer {
-        gap: 8rem;
+        gap: 5rem;
+    }
+
+    footer {
+        justify-content: space-between;
     }
 
 }
